@@ -6,10 +6,16 @@
     //Separe os números pares e os números ímpares em listas distintas e apresente as listas de forma crescente e forma descrescente.
 
     //ENTRADA
-
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
     //PROCESSAMENTO
-
+    let pares = []
+    let impares = []
+    for (const numero of listaDeNumeros) {
+        (numero % 2 == 0) ? pares.push(numero) : impares.push(numero);
+    }
+    alert(`Os números pares crescentes são: ${pares.join(", ")} e os pares decrescente são: ${pares.reverse().join(", ")}`);
+    alert(`Os números impares crescentes são: ${impares.join(", ")} e os impares decrescentes são: ${impares.reverse().join(", ")}`);
 
     //SAÍDA
 
